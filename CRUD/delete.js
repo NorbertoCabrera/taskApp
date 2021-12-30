@@ -11,7 +11,7 @@ var arreglo = read();//arreglo guardara el arreglo que leyo read del archivo tas
 // borrara ese elemento ,es decir tanto el titulo como su descripcion.
 const eliminar = (titulo) =>{
     
-    let indice=0; //creamos una variable indice y la igualamos a cero . 
+   /*  let indice=0; //creamos una variable indice y la igualamos a cero . 
     
      for (let index = 0; index < arreglo.length; index++) {//recorremos y preguntamos si el titulo del elemento por el que esta pasando el ciclo for 
                                                         //es igual al titulo que le pasamos a la funcion:
@@ -26,12 +26,12 @@ const eliminar = (titulo) =>{
        
         write(arreglo); //luego escribimos el arreglo con el elemento ya eliminado 
                  
+ */
 
 
-
-     // let arreglo2=arreglo.filter(x => x.title!=titulo);  //esta es la funcion mejorada ,hace lo mismo en una sola linea de codigo
+     let arreglo2=arreglo.filter(x => x.title!=titulo);  //esta es la funcion mejorada ,hace lo mismo en una sola linea de codigo
                 
-               // write(arreglo2);
+                write(arreglo2);
                             }
 
 
