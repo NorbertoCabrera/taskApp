@@ -12,7 +12,7 @@ let arreglo = read(); //como read devuelve un arreglo la ejecuto "read()" y la i
 const actualizar = (titulo,descripcion) =>{
 
 
-                  arreglo.forEach(element => { //con el forEach recorremos cada elemento del arreglo, a los elementos se les llama element pero puede llevar cualquier nombre
+                 /*  arreglo.forEach(element => { //con el forEach recorremos cada elemento del arreglo, a los elementos se les llama element pero puede llevar cualquier nombre
        
                      if(element.title==titulo){   //si el titulo del elemento "element.title" es igual a titulo 
                          element.desc=descripcion; // la descripcion de ese mismo elemento sera cambiada por la descripcion nueva "descripcion"
@@ -28,9 +28,19 @@ const actualizar = (titulo,descripcion) =>{
                                 
                                 
                      write(arreglo); //el arreglo original ya fue modificado en el if y lo escribimos al JSON con write
-                           
+                            */
+             let arreglo2 = arreglo.map(function(objeto){//funcion hecha con map();
+                          //var objetoM ={};
+                          if(objeto.title==titulo){
+                            objeto.desc=descripcion;
+                          }
+                          return objeto;
+             })
 
-           
+
+
+                  //console.log(arreglo2);
+                  write(arreglo2);
 
                                                 }
 
